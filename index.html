@@ -3,77 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Katie Curtis - Professional Portfolio</title>
     <style>
         body {
-            background-color: #f7f7f7; /* Light gray */
-            color: #333; /* Dark gray for text */
             font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
             margin: 0;
             padding: 0;
         }
-        h1, h2 {
-            color: #6a5acd; /* Light purple */
-        }
-        .container {
-            width: 80%;
-            margin: auto;
+        header {
+            background-color: #007bff;
+            color: white;
             padding: 20px;
+            text-align: center;
         }
-        .section {
-            margin-bottom: 40px;
+        section {
             padding: 20px;
-            border-radius: 5px;
-            background-color: white; /* White */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
         }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
+        #about {
+            background-color: #28a745;
+            color: white;
         }
-        .project {
-            background-color: #e6e6fa; /* Lighter light purple */
+        #projects {
+            background-color: #ffcc00;
+        }
+        .project-card {
+            background-color: white;
+            border: 1px solid #343a40;
             border-radius: 5px;
-            padding: 15px;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 300px;
+            vertical-align: top;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
             text-align: center;
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="section intro">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi! I'm Katie Curtis. This website is a work in progress. </p>
+<header>
+    <h1>Katie Curtis - Professional Portfolio</h1>
+</header>
+<section id="intro">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Here you will find information about my projects, skills, and experience.</p>
+</section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate developer committed to creating accessible and user-friendly applications.</p>
+</section>
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Description of project 1.</p>
     </div>
-
-    <div class="section about">
-        <h2>About Me</h2>
-        <p>I am a PhD student in kinesiology with an emphasis in exercise physiology. In addition to my teaching assignments within the Kinesiology department, I work in the Sports Science department at Michigan State University.  </p>
+    <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Description of project 2.</p>
     </div>
-
-    <div class="section projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Biobanding in Male Youth Hockey Players</h3>
-            <p>Description of project one.</p>
-        </div>
-        <div class="project">
-            <h3>Relative Age Effect vs Biobanding in Male Youth Hockey Players</h3>
-            <p>Description of project two.</p>
-        </div>
-        <div class="project">
-            <h3>Reliabilty and Validity of the Heart Rate Monitor Component of Catapult Sports' Vector Elite 2.3 Vest </h3>
-            <p>Description of project three.</p>
-        </div>
-        <div class="project">
-            <h3>Countermovemnt Jump Assessments </h3>
-            <p>Description of project three.</p>
-        </div>
-        <!-- Add more projects as needed -->
+    <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Description of project 3.</p>
     </div>
-</div>
-
+    <!-- Add more project cards as needed -->
+</section>
+<footer>
+    <p>Contact me at [your-email@example.com]</p>
+</footer>
 </body>
 </html>
