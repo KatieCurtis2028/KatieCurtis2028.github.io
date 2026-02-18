@@ -3,80 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katie Curtis - Professional Portfolio</title>
+    <title>Professional Portfolio</title>
     <style>
         body {
+            background-color: white;
+            color: #333333;
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #343a40;
             margin: 0;
-            padding: 0;
         }
         header {
-            background-color: #007bff;
-            color: white;
+            background-color: #d8c9f0;
             padding: 20px;
             text-align: center;
         }
-        section {
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555555;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #666666;
+        }
+        .intro, .about, .projects {
             padding: 20px;
-            margin: 10px;
         }
-        #about {
-            background-color: #28a745;
-            color: white;
-        }
-        #projects {
-            background-color: #ffcc00;
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
         }
         .project-card {
-            background-color: white;
-            border: 1px solid #343a40;
+            background-color: #e8d5f2;
+            padding: 15px;
             border-radius: 5px;
-            padding: 10px;
-            margin: 10px;
-            display: inline-block;
-            width: 300px;
-            vertical-align: top;
-        }
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 10px;
             text-align: center;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
+
 <header>
-    <h1>Katie Curtis - Professional Portfolio</h1>
+    <h1>Welcome to My Professional Portfolio</h1>
 </header>
-<section id="intro">
-    <h2>Welcome to My Portfolio</h2>
-    <p>Here you will find information about my projects, skills, and experience.</p>
+
+<nav>
+    <a href="#intro">Intro</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+</nav>
+
+<section id="intro" class="intro">
+    <h2>Introduction</h2>
+    <p>Hello! I am Katie Curtis, and this is my professional portfolio.</p>
 </section>
-<section id="about">
+
+<section id="about" class="about">
     <h2>About Me</h2>
-    <p>I am pursuing a PhD in kinesiology with an emphasis in exercise physiology.</p>
+    <p>I am a passionate developer with experience in various programming languages and frameworks. My goal is to create impactful projects that solve real-world problems.</p>
 </section>
-<section id="projects">
-    <h2>Projects</h2>
+
+<section id="projects" class="projects">
+    <h2>My Projects</h2>
     <div class="project-card">
-        <h3>Biobanding in male USA youth hockey players</h3>
-        <p>Description of project 1.</p>
+        <h3>Project 1</h3>
+        <p>A brief description of Project 1.</p>
     </div>
     <div class="project-card">
-        <h3>Relative age effect vs biobanding in male USA youth hockey players</h3>
-        <p>Description of project 2.</p>
+        <h3>Project 2</h3>
+        <p>A brief description of Project 2.</p>
     </div>
     <div class="project-card">
-        <h3>Reliability and validity of the heart rate monitor component of Catapult Sports' Vector Elite 2.1 vest</h3>
-        <p>Description of project 3.</p>
+        <h3>Project 3</h3>
+        <p>A brief description of Project 3.</p>
+    </div>
+    <div class="project-card">
+        <h3>Project 4</h3>
+        <p>A brief description of Project 4.</p>
     </div>
     <!-- Add more project cards as needed -->
 </section>
-<footer>
-    <p>Contact me at [curti211@msu.edu]</p>
-</footer>
+
 </body>
 </html>
