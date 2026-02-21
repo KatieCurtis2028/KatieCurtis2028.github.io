@@ -1,88 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
-    <style>
-        body {
-            background-color: white;
-            color: #333333;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        header {
-            background-color: #d8c9f0;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #555555;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #666666;
-        }
-        .intro, .about, .projects {
-            padding: 20px;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .project-card {
-            background-color: #e8d5f2;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: center;
-            transition: transform 0.2s;
-        }
-        .project-card:hover {
-            transform: scale(1.05);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Katie| Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Katie Curtis - Professional Portfolio</h1>
-</header>
-<section id="intro" class="intro">
-    <h2>Introduction</h2>
-    <p>Hello! I am Katie Curtis, and this is my professional portfolio.</p>
-</section>
+  <div class="container">
+    
+    <!-- Profile Photo -->
+    <img src="profile.jpg" alt="Your Photo" class="profile-pic">
 
-<section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I am pursuing my PhD in kinesiology with an emphasis in exercise physiology at Michigan State University. I have worked in the Sports Science department at MSU for the last four years. I coordinate the Catapult devices for MSU Volleyball. I also teach in the Kinesiology department in addition to my work with Sports Science.  </p>
-</section>
+    <!-- Name -->
+    <h1>Katie</h1>
 
-<section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div class="project-card">
-        <h3>Biobanding in male youth USA Hockey players</h3>
-        <p>A brief description of Project 1.</p>
+    <!-- Intro -->
+    <p class="intro">
+      I am pursuing my PhD in kinesiology with an emphasis in exercise physiology at Michigan State University. I have worked in the Sports Science department at MSU for the last four years. I coordinate the Catapult devices for MSU Volleyball. I also teach in the Kinesiology department in addition to my work with Sports Science
+    </p>
+
+    <!-- Contact Info -->
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Email: curti@msu</p>
+      <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
     </div>
-    <div class="project-card">
-        <h3>Relative age effect vs biobanding in male youth USA Hockey Players</h3>
-        <p>A brief description of Project 2.</p>
-    </div>
-    <div class="project-card">
-        <h3>Reliability and validity of the heart rate monitor component of Catapult Sports' Vector Elite 2.1 vest</h3>
-        <p>A brief description of Project 3.</p>
-    </div>
-    <div class="project-card">
-        <h3>Countermovement jump assessments</h3>
-        <p>A brief description of Project 4.</p>
-    </div>
-    <!-- Add more project cards as needed -->
-</section>
+
+  </div>
 
 </body>
 </html>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4e73df, #1cc88a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contact a {
+  color: #4e73df;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
