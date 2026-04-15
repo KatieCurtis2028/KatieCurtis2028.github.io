@@ -3,34 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katie Curtis | Professional Portfolio</title>
+    <title>Katie Curtis | Academic Portfolio</title>
     <style>
-        /* CSS Color Palette: Gray, Green, White, Black */
+        /* Base Styles */
         body {
-            background-color: #ffffff; /* White background */
-            color: #2d3436; /* Black/Dark Gray text */
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4; /* Light Gray background to make white blocks pop */
+            color: #333333;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
-            line-height: 1.6;
+            line-height: 1.7;
         }
         header {
-            background-color: #18453B; /* MSU Forest Green */
+            background-color: #18453B; /* MSU Green */
             color: white;
-            padding: 60px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-        header p {
-            font-weight: 300;
-            opacity: 0.9;
-        }
         nav {
-            background: #333333; /* Dark Gray/Black */
+            background: #222222; /* Black */
             padding: 15px 0;
             text-align: center;
             position: sticky;
@@ -42,131 +32,136 @@
             text-decoration: none;
             color: #ffffff;
             font-weight: bold;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
         }
-        nav a:hover {
-            color: #18453B;
-            background: white;
-            padding: 5px 10px;
-            border-radius: 4px;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+        nav a:hover { color: #18453B; background: white; padding: 5px 10px; border-radius: 4px; }
+
+        .container { max-width: 850px; margin: auto; padding: 40px 20px; }
+        
         h2 {
             color: #18453B;
-            border-left: 5px solid #18453B;
-            padding-left: 15px;
             text-transform: uppercase;
-            font-size: 1.2rem;
-        }
-        .about {
-            background: #f4f4f4; /* Light Gray */
-            padding: 30px;
-            border-radius: 4px;
-            border-bottom: 3px solid #cccccc;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .project-card {
-            background-color: #ffffff;
-            padding: 20px;
-            border: 1px solid #dddddd; /* Thin gray border */
-            border-top: 5px solid #18453B; /* Green top accent */
-            transition: all 0.3s ease;
-        }
-        .project-card:hover {
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            border-top-color: #333333; /* Turns black on hover */
-        }
-        .project-card h3 {
-            margin-top: 0;
-            color: #333333;
-            font-size: 1.1rem;
-        }
-        .award {
+            font-size: 1.3rem;
+            margin-top: 50px;
+            border-bottom: 3px solid #18453B;
             display: inline-block;
-            margin-top: 10px;
-            padding: 5px 10px;
-            background: #e8f5e9;
-            color: #18453B;
-            font-size: 0.8rem;
+            padding-bottom: 5px;
+        }
+
+        /* White Block / Card Styling */
+        .academic-list { list-style: none; padding: 0; margin-top: 20px; }
+        
+        .academic-item {
+            background-color: #ffffff; /* The White Block */
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+            transition: transform 0.2s ease;
+        }
+        
+        .academic-item:hover {
+            transform: translateY(-3px); /* Lifts slightly on hover */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .item-title { font-weight: bold; color: #18453B; display: block; font-size: 1.15rem; margin-bottom: 8px; }
+        .item-detail { font-size: 0.95rem; color: #555555; display: block; margin-bottom: 10px; }
+        
+        /* Badges */
+        .badge {
+            font-size: 0.7rem;
+            text-transform: uppercase;
             font-weight: bold;
-            border-radius: 3px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-right: 5px;
         }
-        footer {
-            text-align: center;
-            padding: 40px;
-            font-size: 0.8rem;
-            color: #999999;
+        .badge-pub { background: #e8f5e9; color: #18453B; border: 1px solid #c8e6c9; }
+        .badge-pres { background: #e3f2fd; color: #1565c0; border: 1px solid #bbdefb; }
+        .badge-award { background: #fff3e0; color: #e67e22; border: 1px solid #ffe0b2; }
+
+        .cv-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #18453B;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #18453B;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: 0.3s;
         }
+        .cv-link:hover { background: #18453B; color: white; }
+
+        footer { text-align: center; padding: 60px 0; color: #888; font-size: 0.85rem; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Katie Curtis</h1>
-    <p>PhD Student • Exercise Physiology • MSU Sports Science</p>
+    <p>PhD Student • Exercise Physiology • Michigan State University</p>
+</header>
+
 <nav>
     <a href="#about">About</a>
-    <a href="#publications">Publications</a>
+    <a href="#working manuscripts">Working Manuscripts</a>
     <a href="#presentations">Presentations</a>
-    <a href="cv.pdf" target="_blank">View CV</a>
+    <a href="cv.pdf" target="_blank">CV (PDF)</a>
 </nav>
 
 <div class="container">
     
+    
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am pursuing my PhD in kinesiology with an emphasis in exercise physiology at <strong>Michigan State University</strong>. I coordinate the Catapult devices for MSU Volleyball and teach in the Kinesiology department. My research focuses on maturation, physical performance, and sports technology validation.</p>
-        <a href="cv.pdf" target="_blank" class="cv-link">Download Full CV (PDF)</a>
+        <div class="academic-item"> <h2>About Me</h2>
+            <p>I am pursuing my PhD in kinesiology with an emphasis in exercise physiology at <strong>Michigan State University</strong>. I coordinate the Catapult devices for MSU Volleyball and teach in the Kinesiology department. My research focuses on maturation, physical performance, and sports technology validation.</p>
+            <a href="cv.pdf" target="_blank" class="cv-link">Download Full CV</a>
+        </div>
     </section>
-
-    <section id="Working Manuscripts and Publications">
-        <h2>Manuscripts & Publications</h2>
+    <section id="Publications">
+        <h2>Publications</h2>
+        <ul class="academic-list">
+            <li class="academic-item">
+                <span class="item-title">The relationship between lower-body muscular power and running performance in Division I American football players</span>
+                <span class="item-detail"> A., Montoye,  T., Slater, K., Pfeiffer, Curtis., K Melcher., R Burghardt., W (2026) </li>
+            <li class="academic-item">
+                <span class="item-title">Comparisons of lower-body muscular function anthropometrics, and body composition between Division I and III collegiate association football players</span>
+                <span class="item-detail">A., Montoye, M., Przepiora, T., Stauffer, K., Pfeiffer, K., Curtis, M., Harkey, W.,Burghardt (2026) </li>
+        </ul>
+    </section>
+    
+    <section id="Working Manuscripts">
+        <h2>Working Manuscripts</h2>
         <ul class="academic-list">
             <li class="academic-item">
                 <span class="item-title">Reliability and validity of the heart rate monitor component of Catapult Sports' Vector Elite 2.1 vest</span>
-                <span class="item-detail">Curtis, K., Burghardt., W., Ferguson., D., Currie., K, Pfeiffer., K. </span>
-            </li>
+                <span class="item-detail"> K., Curtis, W., D., Ferguson, K., Currie, K., Pfeiffer  </li>
             <li class="academic-item">
-                <span class="item-title">Biobanding in male youth USA Hockey players</span>
-                <span class="item-detail">Curtis, K., K., Martell., K., Deiffenbach, K., Pfeiffer.</span>
-            </li>
+                <span class="item-title">The effect of biobanding on the anthropometrics and physical performance of male youth USA Hockey players</span>
+                <span class="item-detail"> K., Curtis, W., K., Martell, K., Deiffenbach., K., Pfeiffer 
             <li class="academic-item">
-                <span class="item-title">Relative age effect vs maturation status in male youth USA Hockey players</span>
-                <span class="item-detail">Curtis, K., K., Martell., K., Deiffenbach, K., Pfeiffer.</span>
-            </li>
-            <li class="academic-item">
-                <span class="item-title"> The relationship between lower-body muscular power and running performance in Division I American football players
-</span>
-                <span class="item-detail">A., Montoye,  T., Slater, K., Pfeiffer, Curtis., K Melcher., R Burghardt., W (2026).</span>
-                </li>
-            <li class="academic-item">
-                <span class="item-title"> Comparisons of lower-body muscular function anthropometrics, and body composition between Division I and III collegiate association football players
-                <span class="item-detail">A., Montoye, M., Przepiora, T., Stauffer, K., Pfeiffer, K., Curtis, M., Harkey, W.,Burghardt</span>
+                <span class="item-title">Relative age effect vs biobanding in male youth USA Hockey Players</span>
+                <span class="item-detail"> K., Curtis, W., K., Martell, K., Deiffenbach., K., Pfeiffer </li>
         </ul>
     </section>
 
-    <section id="Presentations">
+    <section id="presentations">
         <h2>Presentations & Posters</h2>
         <ul class="academic-list">
             <li class="academic-item">
                 <span class="item-title">Biobanding in male youth USA Hockey players</span>
-                <span class="item-detail">Michigan ACSM Annual Conference (2023).</span>
+                <span class="item-detail">Michigan ACSM Annual Conference (2025).</span>
                 <span class="badge badge-award">Outstanding Doctoral Poster Presentation</span>
                 <span class="badge badge-pres">Poster</span>
             </li>
             <li class="academic-item">
                 <span class="item-title">Relative age effect vs biobanding in male youth USA Hockey Players</span>
-                <span class="item-detail">National Strength and Conditioning Association (NSCA) Conference.</span>
+                <span class="item-detail">MSU Practicum 2026 </span>
                 <span class="badge badge-pres">Oral Presentation</span>
             </li>
         </ul>
@@ -175,9 +170,7 @@
 </div>
 
 <footer>
-    <p style="text-align: center; color: #999; font-size: 0.8rem; padding: 40px 0;">
-        &copy; 2026 Katie Curtis | Michigan State University
-    </p>
+    &copy; 2026 Katie Curtis | Michigan State University
 </footer>
 
 </body>
